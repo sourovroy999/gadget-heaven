@@ -1,49 +1,72 @@
-import React from 'react';
+import React from "react";
+import { FaRegHeart } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
+import { Link, NavLink } from "react-router";
 
 const Nav = () => {
-    return (
-        <div className="navbar bg-base-100 shadow-sm">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-      </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
-    </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
+  const links = (
+    <>
       <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
+        <NavLink to="/">Home</NavLink>
       </li>
-      <li><a>Item 3</a></li>
-    </ul>
-  </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
-  </div>
-</div>
-    );
+      <li>
+        <NavLink to='/statistics'>Statistics</NavLink>
+      </li>
+      <li>
+        <NavLink to='/dashboard'>Dashboard</NavLink>
+      </li>
+      <li>
+        <NavLink to='/review'>Review</NavLink>
+      </li>
+    </>
+  );
+
+  return (
+    <div className="navbar text-white bg-[#9538E2] shadow-sm rounded-t-2xl">
+      <div className="navbar-start ">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {" "}
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />{" "}
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content text-white bg-purple-600 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            {links}
+          </ul>
+        </div>
+        <Link to='/' className="btn btn-ghost text-xl -ml-6 md:ml-0 hover:text-purple-600 hover:bg-white">Gadget Heaven</Link>
+      </div>
+      <div className="navbar-center hidden md:flex">
+        <ul className="menu menu-horizontal px-1">{links}</ul>
+      </div>
+      <div className="navbar-end">
+        <div className="flex gap-3">
+        <div className="border border-gray-200 rounded-full p-2 bg-white text-black">
+          <IoCartOutline />
+        </div>
+        <div className="border-gray-200 rounded-full p-2 bg-white text-black">
+        <FaRegHeart />
+
+        </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Nav;
