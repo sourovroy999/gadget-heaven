@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../Components/Hero';
 import Gadgets from '../Components/Gadgets';
 import { Outlet, useLoaderData } from 'react-router';
+import Phones from '../Components/Phones';
 
 const Home = () => {
 
@@ -14,6 +15,7 @@ const Home = () => {
        <Gadgets  gadgetsData={gadgetsData}/>
 
         </div>
+
 
         </>
     );

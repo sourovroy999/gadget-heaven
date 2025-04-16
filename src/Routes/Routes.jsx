@@ -6,6 +6,7 @@ import Dashboard from "../Pages/Dashboard";
 import Statistics from "../Pages/Statistics";
 import Review from "../Pages/Review";
 import Gadget from "../Components/Gadget";
+import Phones from "../Components/Phones";
 
 export const router=createBrowserRouter([
     {
@@ -17,7 +18,17 @@ export const router=createBrowserRouter([
             path:'/',
             element:<Home/>,
             loader:(()=>fetch('/productsData.json')),
-           
+            children:[
+                {
+                    path:'allgadgets',
+                    element:<Gadget/>,
+                },
+                {
+                    path:'phones',
+                    element:<Phones/>
+                }
+            ]
+            
             },
             {
                 path:'/dashboard',
