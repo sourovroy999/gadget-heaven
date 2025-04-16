@@ -188,7 +188,7 @@
     },
     {
       "product_id": "MAC002",
-      "product_title": "MacBook Pro 14" M1 Pro",
+      "product_title": "MacBook Pro 14 inch M1 Pro",
       "product_image": "https://i.ibb.co.com/twkssgJY/Mac-Book-Pro-14-M1-Pro.jpg",
       "category": "macbook",
       "price": 1999.99,
@@ -199,7 +199,7 @@
     },
     {
       "product_id": "MAC003",
-      "product_title": "MacBook Pro 16" M1 Max",
+      "product_title": "MacBook Pro 16 inch M1 Max",
       "product_image": "https://i.ibb.co.com/h1xsh4p7/Mac-Book-Pro-16-M1-Max.jpg",
       "category": "macbook",
       "price": 2699.99,
