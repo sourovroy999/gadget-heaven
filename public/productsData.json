@@ -1,0 +1,222 @@
+[
+    {
+      "product_id": "LAP001",
+      "product_title": "Dell XPS 13",
+      "product_image": "https://i.ibb.co.com/4nf4pMw1/Dell-XPS-13.jpg",
+      "category": "laptop",
+      "price": 999.99,
+      "description": "13.3-inch laptop with an InfinityEdge display and 11th Gen Intel Core processors.",
+      "Specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "Intel Iris Xe"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "LAP002",
+      "product_title": "HP Spectre x360",
+      "product_image": "https://i.ibb.co.com/9khB6T1D/HP-Spectre-x360.jpg",
+      "category": "laptop",
+      "price": 1099.99,
+      "description": "2-in-1 touchscreen laptop with sleek design and long battery life.",
+      "Specification": ["Intel Core i7", "16GB RAM", "1TB SSD", "Intel Iris Xe"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "LAP003",
+      "product_title": "Lenovo ThinkPad X1 Carbon",
+      "product_image": "https://i.ibb.co.com/7fj9D3N/Lenovo-Think-Pad-X1-Carbon.jpg",
+      "category": "laptop",
+      "price": 1299.99,
+      "description": "Business laptop with carbon fiber build and strong performance.",
+      "Specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "Intel Iris Xe"],
+      "availability": false,
+      "rating": 4.7
+    },
+    {
+      "product_id": "LAP004",
+      "product_title": "Asus ZenBook 14",
+      "product_image": "https://i.ibb.co.com/0p4hyPH9/Asus-Zen-Book-14.jpg",
+      "category": "laptop",
+      "price": 899.99,
+      "description": "Ultra-slim 14-inch laptop with AMD Ryzen processor.",
+      "Specification": ["Ryzen 7", "16GB RAM", "512GB SSD", "Radeon Graphics"],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": "LAP005",
+      "product_title": "Acer Swift 3",
+      "product_image": "https://i.ibb.co.com/ym6z76wp/Acer-Swift-3.jpg",
+      "category": "laptop",
+      "price": 699.99,
+      "description": "Compact laptop with AMD Ryzen 5 and long battery life.",
+      "Specification": ["Ryzen 5", "8GB RAM", "256GB SSD", "Radeon Graphics"],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": "LAP006",
+      "product_title": "Microsoft Surface Laptop 4",
+      "product_image": "https://i.ibb.co.com/b5jhJ8Zt/Microsoft-Surface-Laptop-4.jpg",
+      "category": "laptop",
+      "price": 999.99,
+      "description": "13.5-inch stylish touchscreen laptop with great build quality.",
+      "Specification": ["Intel Core i5", "8GB RAM", "512GB SSD", "Intel Iris Xe"],
+      "availability": false,
+      "rating": 4.5
+    },
+    {
+      "product_id": "PHN001",
+      "product_title": "iPhone 13 Pro",
+      "product_image": "https://i.ibb.co.com/SXwbG2JZ/i-Phone-13-Pro.jpg",
+      "category": "phone",
+      "price": 999.99,
+      "description": "Apple flagship with A15 chip and ProMotion display.",
+      "Specification": ["A15 Bionic", "6GB RAM", "128GB", "12MP Triple Cam"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "PHN002",
+      "product_title": "Samsung Galaxy S21",
+      "product_image": "https://i.ibb.co.com/ym7xf55y/Samsung-Galaxy-S21.jpg",
+      "category": "phone",
+      "price": 799.99,
+      "description": "6.2-inch AMOLED with Exynos 2100 and premium build.",
+      "Specification": ["Exynos 2100", "8GB RAM", "128GB", "64MP Camera"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "PHN003",
+      "product_title": "Google Pixel 6",
+      "product_image": "https://i.ibb.co.com/KzpD5w35/Google-Pixel-6.jpg",
+      "category": "phone",
+      "price": 599.99,
+      "description": "Clean Android with Google Tensor chip and great cameras.",
+      "Specification": ["Tensor", "8GB RAM", "128GB", "50MP Main Cam"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "PHN004",
+      "product_title": "OnePlus 9",
+      "product_image": "https://i.ibb.co.com/JFjCnwFQ/One-Plus-9.jpg",
+      "category": "phone",
+      "price": 729.99,
+      "description": "Fast and smooth phone with Snapdragon 888 and OxygenOS.",
+      "Specification": ["Snapdragon 888", "8GB RAM", "128GB", "48MP Camera"],
+      "availability": false,
+      "rating": 4.4
+    },
+    {
+      "product_id": "PHN005",
+      "product_title": "Xiaomi Mi 11",
+      "product_image": "https://i.ibb.co.com/Pv7Qd7b3/Xiaomi-Mi-11.jpg",
+      "category": "phone",
+      "price": 699.99,
+      "description": "Flagship-level specs at a great price, 108MP camera.",
+      "Specification": ["Snapdragon 888", "8GB RAM", "128GB", "108MP Camera"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "PHN006",
+      "product_title": "Realme GT Neo 2",
+      "product_image": "https://i.ibb.co.com/YBnbDHXx/Realme-GT-Neo-2.jpg",
+      "category": "phone",
+      "price": 499.99,
+      "description": "Affordable performance smartphone with AMOLED screen.",
+      "Specification": ["Snapdragon 870", "8GB RAM", "128GB", "64MP Camera"],
+      "availability": true,
+      "rating": 4.2
+    },
+    {
+      "product_id": "SMW001",
+      "product_title": "Apple Watch Series 7",
+      "product_image": "https://i.ibb.co.com/VrbYPkC/Apple-Watch-Series-7.jpg",
+      "category": "smart_watch",
+      "price": 399.99,
+      "description": "Larger display and faster charging with health features.",
+      "Specification": ["Always-On Retina", "ECG", "Blood Oxygen", "GPS"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "SMW002",
+      "product_title": "Samsung Galaxy Watch 4",
+      "product_image": "https://i.ibb.co.com/wFY1wv0x/Samsung-Galaxy-Watch-4.jpg",
+      "category": "smart_watch",
+      "price": 249.99,
+      "description": "WearOS smart watch with body composition analysis.",
+      "Specification": ["Wear OS", "ECG", "GPS", "Heart Rate Monitor"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "SMW003",
+      "product_title": "Fitbit Versa 3",
+      "product_image": "https://i.ibb.co.com/F4Mg00J3/Fitbit-Versa-3.jpg",
+      "category": "smart_watch",
+      "price": 229.99,
+      "description": "Health and fitness smartwatch with built-in GPS.",
+      "Specification": ["SpO2", "Heart Rate", "Sleep Tracking", "GPS"],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": "SMW004",
+      "product_title": "Garmin Venu 2",
+      "product_image": "https://i.ibb.co.com/ZQNNV2R/Garmin-Venu-2.jpg",
+      "category": "smart_watch",
+      "price": 349.99,
+      "description": "AMOLED fitness watch with long battery life and accuracy.",
+      "Specification": ["AMOLED", "GPS", "Pulse Ox", "VO2 Max"],
+      "availability": false,
+      "rating": 4.6
+    },
+    {
+      "product_id": "MAC001",
+      "product_title": "MacBook Air M1",
+      "product_image": "https://i.ibb.co.com/mCFgj4Xg/Mac-Book-Air-M1.jpg",
+      "category": "macbook",
+      "price": 999.99,
+      "description": "Apple M1 chip with fanless design and long battery.",
+      "Specification": ["M1", "8GB RAM", "256GB SSD", "13.3-inch Retina"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "MAC002",
+      "product_title": "MacBook Pro 14" M1 Pro",
+      "product_image": "https://i.ibb.co.com/twkssgJY/Mac-Book-Pro-14-M1-Pro.jpg",
+      "category": "macbook",
+      "price": 1999.99,
+      "description": "M1 Pro chip with high-performance media engine.",
+      "Specification": ["M1 Pro", "16GB RAM", "512GB SSD", "14.2-inch XDR"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "MAC003",
+      "product_title": "MacBook Pro 16" M1 Max",
+      "product_image": "https://i.ibb.co.com/h1xsh4p7/Mac-Book-Pro-16-M1-Max.jpg",
+      "category": "macbook",
+      "price": 2699.99,
+      "description": "Extreme performance with M1 Max chip and great display.",
+      "Specification": ["M1 Max", "32GB RAM", "1TB SSD", "16-inch XDR"],
+      "availability": false,
+      "rating": 5.0
+    },
+    {
+      "product_id": "MAC004",
+      "product_title": "MacBook Air M2",
+      "product_image": "https://i.ibb.co.com/KQWTMQC/Mac-Book-Air-M2.jpg",
+      "category": "macbook",
+      "price": 1199.99,
+      "description": "Redesigned with M2 chip and larger display.",
+      "Specification": ["M2", "8GB RAM", "256GB SSD", "13.6-inch Liquid Retina"],
+      "availability": true,
+      "rating": 4.8
+    }
+  ]

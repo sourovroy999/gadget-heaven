@@ -5,7 +5,7 @@ import Gadgets from '../Components/Gadgets';
 const Home = () => {
     return (
         <>
-        <div className=''>
+        <div className='bg-gray-200'>
         <Hero/>
         <Gadgets/>
 
