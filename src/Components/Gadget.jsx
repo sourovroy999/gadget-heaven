@@ -13,8 +13,8 @@ const Gadget = ({singleGadget}) => {
       className="rounded-xl w-96 h-32 object-cover" />
   </figure>
   <div className="card-body">
-    <h2 className="card-title">Price:{product_title}</h2>
-    <p>{price}</p>
+    <h2 className="card-title">{product_title}</h2>
+    <p>Price:{price} $</p>
     
       <button className="btn btn-soft">View Details</button>
     

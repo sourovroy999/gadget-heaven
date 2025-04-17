@@ -6,13 +6,12 @@ import Phones from '../Components/Phones';
 
 const Home = () => {
 
-    const gadgetsData=useLoaderData()
 
     return (
         <>
         <div className='bg-gray-200'>
         <Hero/>
-       <Gadgets  gadgetsData={gadgetsData}/>
+      <Outlet/>
 
         </div>
 
