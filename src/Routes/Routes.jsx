@@ -9,6 +9,7 @@ import Gadget from "../Components/Gadget";
 import Phones from "../Components/Phones";
 import Laptops from "../Components/Laptops";
 import Gadgets from "../Components/Gadgets";
+import Details from "../Pages/details";
 
 export const router = createBrowserRouter([
   {
@@ -61,6 +62,10 @@ export const router = createBrowserRouter([
         path: "/review",
         element: <Review />,
       },
+     {
+        path:"/details",
+        element:<Details/>
+     }
     ],
   },
   {
