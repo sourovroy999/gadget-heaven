@@ -2,9 +2,11 @@ import React from "react";
 import { Toaster } from "react-hot-toast";
 import { SlClose } from "react-icons/sl";
 
-const SingleWishList= ({ cartInside, handleDelete }) => {
+const SingleWishList= ({ cartInside, handleWishDelete }) => {
   const { product_title, product_image, price, product_id, description } =
     cartInside;
+
+    console.log(product_id);
 
   return (
     <div className=" flex  gap-3 justify-between max-w-2xl mx-auto bg-white mb-3 p-4 rounded-2xl">
@@ -18,10 +20,14 @@ const SingleWishList= ({ cartInside, handleDelete }) => {
           <h1 className="font-bold">{product_title}</h1>
           <p>{description}</p>
           <p className="font-bold">Price: {price}</p>
+
+          {/* i should use context api */}
+          <button onClick={()=>handle()} className="btn">Add to Cart</button>
         </div>
+        
       
 
-      <button onClick={() => handleDelete(product_id)} className="">
+      <button onClick={() => handleWishDelete(product_id)} className="">
         <SlClose className="text-red-500 hover:bg-blue-500 " />
       </button>
       <Toaster/>

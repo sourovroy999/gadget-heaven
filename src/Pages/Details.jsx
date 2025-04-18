@@ -26,7 +26,7 @@ const Details = () => {
     saveProducts(product)
  }
 
- const handleAddToWishLists=(product)=>{
+  const handleAddToWishLists=(product)=>{
     saveWishProducts(product)
  }
 

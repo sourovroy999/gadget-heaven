@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { deleteWishProducts, getWishProducts } from '../Utilis/Utilis';
-import SingleWishList from '../Pages/WishList/SingleWishList';
+import SingleWishList from '../Pages/SingleWishList';
 
 const WishList= () => {
 
@@ -10,12 +10,13 @@ const WishList= () => {
         setCarts(storedCarts)
     } ,[])
 
-    const handleDelete = id =>{
+    const handleWishDelete = id =>{
         deleteWishProducts(id)
         const storedCarts=deleteWishProducts([])
         setCarts(storedCarts)
     }
 
+console.log('wish carts', carts);
 
 
     
@@ -24,6 +25,7 @@ const WishList= () => {
         <div className=''>
            <div>
             <div><h1>Cart</h1></div>
+
             <div>length: {carts.length}</div>
 
             <div>
@@ -32,7 +34,7 @@ const WishList= () => {
            </div>
 
             {
-                carts.map(p=> <SingleWishList key={p.product_id} cartInside={p} handleDelete={handleDelete}></SingleWishList>)
+                carts.map(p=> <SingleWishList key={p.product_id} cartInside={p} handleWishDelete={handleWishDelete}></SingleWishList>)
                 
             }
             
