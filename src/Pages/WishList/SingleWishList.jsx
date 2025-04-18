@@ -2,7 +2,7 @@ import React from "react";
 import { Toaster } from "react-hot-toast";
 import { SlClose } from "react-icons/sl";
 
-const SingleCart = ({ cartInside, handleDelete }) => {
+const SingleWishList= ({ cartInside, handleDelete }) => {
   const { product_title, product_image, price, product_id, description } =
     cartInside;
 
@@ -30,4 +30,4 @@ const SingleCart = ({ cartInside, handleDelete }) => {
   );
 };
 
-export default SingleCart;
+export default SingleWishList;

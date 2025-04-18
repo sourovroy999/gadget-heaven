@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useLoaderData, useParams } from "react-router";
-import { saveProducts } from "../Utilis/Utilis";
+import { saveProducts, saveWishProducts } from "../Utilis/Utilis";
 import { Toaster } from "react-hot-toast";
 
 const Details = () => {
@@ -24,6 +24,10 @@ const Details = () => {
 
  const  handleAddToBookMark=(product)=>{
     saveProducts(product)
+ }
+
+ const handleAddToWishLists=(product)=>{
+    saveWishProducts(product)
  }
 
   return (
@@ -71,7 +75,7 @@ const Details = () => {
               </button>
               <Toaster />
 
-              <button className="btn btn-circle">
+              <button onClick={()=>handleAddToWishLists(product)} className="btn btn-circle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

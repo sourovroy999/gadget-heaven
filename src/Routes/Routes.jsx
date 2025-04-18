@@ -68,16 +68,7 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
-        children:[
-            {
-                path:"/dashboard/cart",
-                element:<Cart/>
-            },
-            {
-                path:"/dashboard/wishlist",
-                element:<WishList/>
-            }
-        ]
+        
       },
       {
         path: "/statistics",
