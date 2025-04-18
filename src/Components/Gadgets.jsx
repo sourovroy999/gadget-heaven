@@ -25,7 +25,7 @@ const Gadgets = () => {
         <div className="mt-6 px-8 mx-auto h-fit py-5 bg-white border-gray-100 rounded-xl ">
           <div className="flex flex-col gap-5">
             <Link
-              to="/"
+              
               onClick={() => setTabIndex(0)}
               className="btn rounded-3xl hover:bg-[#9538E2] hover:text-white btn-soft bg-gray-50 text-gray-500"
             >
@@ -51,12 +51,12 @@ const Gadgets = () => {
             >
             Watches
             </Link>
-            <button
+            <Link
               onClick={() => setTabIndex(4)}
               className="btn hover:bg-[#9538E2] hover:text-white rounded-3xl btn-soft bg-gray-50 text-gray-500"
             >
               MacBook
-            </button>
+            </Link>
           </div>
         </div>
 

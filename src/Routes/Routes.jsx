@@ -22,9 +22,22 @@ export const router = createBrowserRouter([
         element: <Home />,
         children: [
           {
-            index: true,
+            // index: true,
+            path:'/',
             loader: () => fetch("/productsData.json"),
             element: <Gadgets />,
+            children:[
+                  
+                    {
+                        path:'/laptops',
+                        element:<Laptops/>
+                    },{
+                        path:'/phones',
+                        element:<Phones/>
+                    }
+                ] 
+
+
           },
           {
             path: "/laptops",
@@ -63,8 +76,9 @@ export const router = createBrowserRouter([
         element: <Review />,
       },
      {
-        path:"/details",
-        element:<Details/>
+        path:"details/:product_id",
+        element:<Details/>,
+        loader:()=>fetch("/productsData.json")
      }
     ],
   },
