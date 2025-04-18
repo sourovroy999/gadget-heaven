@@ -2,6 +2,7 @@ import React from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useLoaderData, useParams } from "react-router";
 import { saveProducts } from "../Utilis/Utilis";
+import { Toaster } from "react-hot-toast";
 
 const Details = () => {
   const { product_id } = useParams();
@@ -68,6 +69,7 @@ const Details = () => {
               <button onClick={()=>handleAddToBookMark(product)} className="btn btn-primary rounded-3xl">
                 Add to Cart
               </button>
+              <Toaster />
 
               <button className="btn btn-circle">
                 <svg

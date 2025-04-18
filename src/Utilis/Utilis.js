@@ -13,8 +13,10 @@ export const getProducts=()=>{
 
 // save
 export const saveProducts= product =>{
+    console.log(product);
+    
     let products=getProducts()
-    const isExist=products.find(b=>b.product_id ===products.product_id)
+    const isExist=products.find(b=>b.product_id ===product.product_id)
 
     if(isExist){
         return toast.error('already bookmarked')

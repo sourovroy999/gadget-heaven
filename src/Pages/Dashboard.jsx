@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { Outlet } from "react-router";
+import Cart from "../Components/Cart";
+import WishList from "../Components/WishList";
 
 const Dashboard = () => {
+    const [show, setShow]=useState(0)
   return (
     <>
       <div className="bg-gray-200  md:pb-44">
@@ -13,15 +17,25 @@ const Dashboard = () => {
             it all!
           </p>
 
+
             <div className="flex justify-center  gap-6 text-white">
-            <button class="btn rounded-3xl w-32 md:w-40  btn-outline text-white hover:bg-white hover:text-[#9538e2] hover:font-bold">Cart</button>
-            <button class="btn rounded-3xl w-32 md:w-40 btn-outline text-white hover:bg-white hover:text-[#9538e2] hover:font-bold">Wish List</button>
+
+            <button onClick={()=>setShow(0)}   className={`btn rounded-3xl w-32 md:w-40  btn-outline  hover:bg-white hover:text-[#9538e2] hover:font-bold ${show===0 ? 'bg-white text-[#9538e2] font-bold' : ' '}` }>Cart</button>
+
+            <button onClick={()=>setShow(1)} className={`btn rounded-3xl w-32 md:w-40  btn-outline  hover:bg-white hover:text-[#9538e2] hover:font-bold ${show === 1? 'bg-white text-[#9538e2] font-bold' : ' '}` }>Wish List</button>
 
             </div>
         </div>
-        <p className="thickPurple">hii</p>
+        
+        {
+           show? <Cart/> : <WishList/>
+        }
+       
+
 
       </div>
+
+
     </>
   );
 };

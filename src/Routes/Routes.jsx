@@ -10,6 +10,8 @@ import Phones from "../Components/Phones";
 import Laptops from "../Components/Laptops";
 import Gadgets from "../Components/Gadgets";
 import Details from "../Pages/details";
+import Cart from "../Components/Cart";
+import WishList from "../Components/WishList";
 
 export const router = createBrowserRouter([
   {
@@ -66,6 +68,16 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+        children:[
+            {
+                path:"/dashboard/cart",
+                element:<Cart/>
+            },
+            {
+                path:"/dashboard/wishlist",
+                element:<WishList/>
+            }
+        ]
       },
       {
         path: "/statistics",
