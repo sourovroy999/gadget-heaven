@@ -12,32 +12,36 @@ import Gadgets from "../Components/Gadgets";
 import Details from "../Pages/details";
 import Cart from "../Components/Cart";
 import WishList from "../Components/WishList";
+import ErrorPage from "../Pages/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement:<ErrorPage/>,
+
     children: [
       {
         // index:true,
         path: "/",
         element: <Home />,
+
         children: [
           {
             // index: true,
             path:'/',
             loader: () => fetch("/productsData.json"),
             element: <Gadgets />,
-            children:[
+            // children:[
                   
-                    {
-                        path:'/laptops',
-                        element:<Laptops/>
-                    },{
-                        path:'/phones',
-                        element:<Phones/>
-                    }
-                ] 
+            //         {
+            //             path:'/laptops',
+            //             element:<Laptops/>
+            //         },{
+            //             path:'/phones',
+            //             element:<Phones/>
+            //         }
+            //     ] 
 
 
           },

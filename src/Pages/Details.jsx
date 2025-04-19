@@ -1,8 +1,9 @@
 import React from "react";
-import { FaHeart, FaRegHeart } from "react-icons/fa";
+import { FaHeart, FaRegHeart, FaStar } from "react-icons/fa";
 import { useLoaderData, useParams } from "react-router";
 import { saveProducts, saveWishProducts } from "../Utilis/Utilis";
 import { Toaster } from "react-hot-toast";
+import { render } from "react-dom";
 
 const Details = () => {
   const { product_id } = useParams();
@@ -29,6 +30,8 @@ const Details = () => {
   const handleAddToWishLists=(product)=>{
     saveWishProducts(product)
  }
+
+
 
   return (
     <>
@@ -63,11 +66,16 @@ const Details = () => {
               ))}
             </p>
 
-            <div>
+            <div className="flex items-center gap-1">
               <h1 className="font-bold">Rating</h1>
+              <FaStar/>
             </div>
 
+
+              <div id="starContainer">
+
             <button className="btn w-fit">{rating}</button>
+            </div>
 
             <div className="flex gap-4">
               <button onClick={()=>handleAddToBookMark(product)} className="btn btn-primary rounded-3xl">

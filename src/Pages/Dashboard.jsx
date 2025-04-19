@@ -20,7 +20,7 @@ const Dashboard = () => {
 
             <div className="flex justify-center  gap-6 text-white">
 
-            <button onClick={()=>setShow(0)}   className={`btn rounded-3xl w-32 md:w-40  btn-outline  hover:bg-white hover:text-[#9538e2] hover:font-bold ${show===0 ? 'bg-white text-[#9538e2] font-bold' : ' '}` }>Cart</button>
+            <button onClick={()=>setShow(0)}   className={`btn rounded-3xl w-32 md:w-40  btn-outline  hover:bg-white hover:text-[#9538e2] hover:font-bold ${show===0 ? 'bg-white text-[#9538e2] font-bold' : ' '}` }>Cart </button>
 
             <button onClick={()=>setShow(1)} className={`btn rounded-3xl w-32 md:w-40  btn-outline  hover:bg-white hover:text-[#9538e2] hover:font-bold ${show === 1? 'bg-white text-[#9538e2] font-bold' : ' '}` }>Wish List</button>
 

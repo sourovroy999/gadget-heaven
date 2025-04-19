@@ -22,15 +22,10 @@ console.log('wish carts', carts);
     
 
     return (
-        <div className=''>
-           <div>
-            <div><h1>Wish</h1></div>
-
-            <div>length: {carts.length}</div>
-
-            <div>
-                
-            </div>
+        <div className='mt-5'>
+           
+           <div className='max-w-4xl  my-5 mx-auto font-bold'>
+               <h1 className='text-center'>Wish Lists</h1>
            </div>
 
             {

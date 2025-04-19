@@ -7,16 +7,16 @@ const Nav = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/" >Home</NavLink>
       </li>
       <li>
-        <NavLink to='/statistics'>Statistics</NavLink>
+        <NavLink to='/statistics' className={({isActive}) => (isActive? "bg-black": '')}>Statistics</NavLink>
       </li>
       <li>
-        <NavLink to='/dashboard'>Dashboard</NavLink>
+        <NavLink to='/dashboard' className={({isActive}) => (isActive? "bg-black": '')}>Dashboard</NavLink>
       </li>
       <li>
-        <NavLink to='/review'>Review</NavLink>
+        <NavLink to='/review' className={({isActive}) => (isActive? "bg-black": '')}>Review</NavLink>
       </li>
     </>
   );
