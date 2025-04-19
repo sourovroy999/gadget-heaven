@@ -23,9 +23,9 @@ const SingleCart = ({ cartInside, handleDelete }) => {
         </div>
       
           
-      <button onClick={() => handleDelete(product_id)} className="">
-        <SlClose className="text-red-500 hover:bg-blue-500 " />
-      </button>
+      <div onClick={() => handleDelete(product_id)} className="">
+        <SlClose className="text-red-500 hover:scale-110 " />
+      </div>
       <Toaster/>
       
     </div>

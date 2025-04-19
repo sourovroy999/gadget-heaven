@@ -12,7 +12,7 @@ const WishList= () => {
 
     const handleWishDelete = id =>{
         deleteWishProducts(id)
-        const storedCarts=deleteWishProducts([])
+        const storedCarts=getWishProducts([])
         setCarts(storedCarts)
     }
 
@@ -24,7 +24,7 @@ console.log('wish carts', carts);
     return (
         <div className=''>
            <div>
-            <div><h1>Cart</h1></div>
+            <div><h1>Wish</h1></div>
 
             <div>length: {carts.length}</div>
 
