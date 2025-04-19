@@ -9,7 +9,7 @@ const SingleCart = ({ cartInside, handleDelete }) => {
     
 
   return (
-    <div className=" flex  gap-3 justify-between max-w-2xl mx-auto bg-white mb-3 p-4 rounded-2xl">
+    <div className=" flex mt-5 gap-3 justify-between max-w-2xl mx-auto bg-white mb-3 p-4 rounded-2xl">
 
       
         <img className=" w-[120px] h-[100px] object-cover"
