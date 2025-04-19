@@ -29,7 +29,7 @@ console.log('wish carts', carts);
            </div>
 
             {
-                carts.map(p=> <SingleWishList key={p.product_id} cartInside={p} handleWishDelete={handleWishDelete}></SingleWishList>)
+                carts.map(p=> <SingleWishList key={p.product_id} cartInside={p} handleWishDelete={()=>handleWishDelete()}></SingleWishList>)
                 
             }
             

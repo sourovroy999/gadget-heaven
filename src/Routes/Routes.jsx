@@ -9,7 +9,7 @@ import Gadget from "../Components/Gadget";
 import Phones from "../Components/Phones";
 import Laptops from "../Components/Laptops";
 import Gadgets from "../Components/Gadgets";
-import Details from "../Pages/details";
+import Details from "../Pages/Details";
 import Cart from "../Components/Cart";
 import WishList from "../Components/WishList";
 import ErrorPage from "../Pages/ErrorPage";
